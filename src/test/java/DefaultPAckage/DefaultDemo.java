@@ -15,7 +15,7 @@ interface Vehicle{
 
 
     default String turnAlarmOff(){
-        return "turning vehicle alaram off"
+        return "turning vehicle alaram off";
     }
 
 }
