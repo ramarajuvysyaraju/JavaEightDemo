@@ -8,6 +8,9 @@ interface Vehicle{
 
     String slowDown();
 
+
+    String gitDemo();
+
     default String turnAlarmOn()
     {
         return "turning vehicle alarm on";
@@ -15,7 +18,7 @@ interface Vehicle{
 
 
     default String turnAlarmOff(){
-        return "turning vehicle alaram off"
+        return "turning vehicle alaram off";
     }
 
 }
@@ -28,6 +31,8 @@ class Car implements Vehicle{
         return "Audi";
     }
 
+
+
     @Override
     public String speedUp() {
         return "The car is speeding up";
@@ -36,6 +41,11 @@ class Car implements Vehicle{
     @Override
     public String slowDown() {
         return "The car is slowing down";
+    }
+
+    @Override
+    public String gitDemo() {
+        return "git demo...";
     }
 }
 
