@@ -9,7 +9,9 @@ interface Vehicle{
     String slowDown();
 
 
-    String gitDemo();
+static String getCompany(){
+    return  "Audi-Bmw";
+}
 
     default String turnAlarmOn()
     {
@@ -24,13 +26,12 @@ interface Vehicle{
 }
 
 
-class Car implements Vehicle{
+class Car implements Vehicle {
 
     @Override
     public String getBrand() {
         return "Audi";
     }
-
 
 
     @Override
@@ -43,17 +44,26 @@ class Car implements Vehicle{
         return "The car is slowing down";
     }
 
-    @Override
-    public String gitDemo() {
-        return "git demo...";
-    }
 }
 
 
 public class DefaultDemo {
 
 
+    public static void main(String[] args) {
+
+        Car vehicle = new Car();
 
 
+        System.out.println( vehicle.getBrand());
+
+        System.out.println( vehicle.slowDown());
+        System.out.println( vehicle.speedUp());
+        System.out.println( vehicle.turnAlarmOn());
+        System.out.println( vehicle.turnAlarmOff());
+
+        System.out.println(Vehicle.getCompany());
+    }
 
 }
+
