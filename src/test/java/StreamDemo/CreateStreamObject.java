@@ -20,7 +20,7 @@ public class CreateStreamObject {
 
         colStream.forEach(System.out::println);
 
-        List<String> list = Arrays.asList("Royal","Fz", "jawa","duke");
+        List<String> list = Arrays.asList("Audi","Skoda", "BMW","TATA");
 
         Stream<String> streamList= list.stream();
 

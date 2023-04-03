@@ -4,6 +4,7 @@ package FunctionalPackage;
 import java.time.LocalDateTime;
 import java.util.function.Supplier;
 
+/*
 class SuppilerImpl implements Supplier<LocalDateTime> {
 
 
@@ -13,6 +14,7 @@ class SuppilerImpl implements Supplier<LocalDateTime> {
     }
 }
 
+*/
 
 public class SuppilerDemo {
 
@@ -22,8 +24,8 @@ public class SuppilerDemo {
      /*  Traditional way  Supplier<LocalDateTime> s = new SuppilerImpl();
         System.out.println(s.get());*/
 
-       /* Supplier<LocalDateTime> s = () -> LocalDateTime.now();
-        System.out.println(s.get());*/
+        Supplier<LocalDateTime> s = () -> LocalDateTime.now();
+        System.out.println(s.get());
 
 
      }

@@ -25,7 +25,6 @@ static String getCompany(){
 
 }
 
-
 class Car implements Vehicle {
 
     @Override

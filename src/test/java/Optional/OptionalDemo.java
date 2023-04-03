@@ -4,19 +4,19 @@ import java.util.Optional;
 
 public class OptionalDemo {
 
-
+//adding for test
     public static void main(String[] args) {
         // of, empty , ofNullable 3 static methods used to create the object
 
 
-        String email="ram@gmail.com";
+       // String email="ram@gmail.com";
 
-      //  String email=null;
+       String email=null;
 
         //public final class Optional  ()
         // empty() is a static method
-       /* Optional<Object> emptyOptional = Optional.empty();
-        System.out.println(emptyOptional);*/
+        Optional<Object> emptyOptional = Optional.empty();
+        System.out.println(emptyOptional);
 
 
      /*   Optional<String> emailOptional = Optional.of(email);
@@ -51,11 +51,11 @@ public class OptionalDemo {
 
         //ifPresent
         Optional<String> gender = Optional.of("");
-        Optional<String> emptyOptional= Optional.empty();
+        Optional<String> emptyOptional1= Optional.empty();
 
-        gender.ifPresent((s) -> System.out.println("value is presnt"));
+        gender.ifPresent((s) -> System.out.println("value is present"));
 
-        emptyOptional.ifPresent((s) -> System.out.println("no value is present"));
+        emptyOptional1.ifPresent((s) -> System.out.println("no value is present"));
 
 
 
